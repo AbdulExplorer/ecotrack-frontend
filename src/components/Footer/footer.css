@@ -1,0 +1,192 @@
+.footer {
+  background: #0e0e0e;
+  color: white;
+  margin-top: 150px;
+  padding-bottom: 40px;
+}
+
+/* Top white curve */
+.whitebar {
+  height: 70px;
+  background: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* Main layout */
+.foot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center   ;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 100px 80px;
+}
+
+/* Left section */
+.footSA {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-family: 'Inter', sans-serif;
+  align-self: center;
+
+}
+
+.logoF {
+  height: 150px;
+  /* margin-left: -250; */
+}
+
+.footSAB {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footSAB a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footSAB a:hover {
+  color: white;
+}
+
+/* Columns */
+.footSB {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footSB a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footSB a:hover {
+  color: white;
+}
+
+/* Divider */
+.footline {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 20px 40px;
+}
+
+/* Bottom */
+.smFoot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: center;
+}
+
+.smf {
+  display: flex;
+  gap: 15px;
+}
+
+.smf a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 22px;
+}
+
+.smf a:hover {
+  color: white;
+}
+
+/* Bottom black bar */
+.blackbar {
+  background: black;
+  text-align: center;
+  padding: 36px;
+  color: white;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .foot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .smFoot {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .foot {
+    gap: 60px;
+    padding: 60px 30px;
+  }
+
+  .logo {
+    height: 155px;
+  }
+}
+
+@media (max-width: 768px) {
+  .foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px 20px;
+  }
+
+  .footSA {
+    width: 100%;
+  }
+
+  .footSB {
+    width: 100%;
+  }
+
+  .smFoot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .smf {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoF {
+    height: 170px;
+    margin-left: -25px;
+  }
+
+  .foot {
+    padding: 40px 15px;
+  }
+
+  .footSAB h4,
+  .footSB h4 {
+    font-size: 14px;
+  }
+
+  .footSAB a,
+  .footSB a {
+    font-size: 13px;
+  }
+
+  .smFoot {
+    font-size: 12px;
+  }
+
+  .smf a {
+    font-size: 18px;
+  }
+}
+
+.footSB, .footSAB {
+  gap: 6px;
+}
+

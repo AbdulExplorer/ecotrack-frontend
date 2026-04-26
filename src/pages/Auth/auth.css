@@ -1,0 +1,205 @@
+/* Background */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Video background */
+.auth-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Dark overlay */
+.overlayA {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.251);
+  z-index: -1;
+}
+
+/* Glass Card */
+.auth-box {
+  width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+
+  /* background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
+
+  background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+
+  color: white;
+  text-align: center;
+}
+
+#auth-box-reg
+{
+    margin-top: 95px;
+}
+
+/* Title */
+.auth-box h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.auth-box input,
+.auth-box select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: #B0B0B0;
+
+  outline: none;
+}
+
+option
+{
+    color: black;
+}
+
+/* Placeholder */
+.auth-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: white;
+  color: black;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-box button:hover {
+  background: #e5e5e5;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Social buttons */
+.social-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btns button {
+  flex: 1;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+/* Bottom text */
+.auth-box p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-box a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+/* Error / success */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: lightgreen;
+  margin-top: 10px;
+}
+
+
+/* Password field */
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+/* 📱 Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+    .auth-video
+    {
+        height: 100vh;
+    }
+
+    .overlayA{
+        height: 100vh;
+    }
+  .auth-box {
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .auth-box h1 {
+    font-size: 20px;
+  }
+
+  .auth-box input,
+  .auth-box select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .auth-box button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .social-btns {
+    flex-direction: column;
+  }
+}
