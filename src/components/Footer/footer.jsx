@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
-import logo from "../../assets/et-L.png";
+import logo from "../../assets/etlogo-w.png";
 
 const Footer = () => {
     return (
@@ -18,25 +18,22 @@ const Footer = () => {
                             
                         </Link>
                         
-                        <h2>ECOTRACK</h2>
+                        {/* <h2>ECOTRACK</h2> */}
                         <p>
-                            helps you monitor and reduce your <br /> carbon footprint with
-                            smart insights,<br />tracking tools, and sustainable solutions.
+                            Eco Track helps you monitor and reduce your carbon footprint with
+                            smart insights, tracking tools, and sustainable solutions.
                         </p>
                         
-
-                        
-
                     </div>
 
-                    <div className="footSAB">
+                    <div className="footSB">
                             <h4>Contact</h4>
                             <a href="tel:+91XXXXXXXXXX">📞 Phone</a>
                             <a href="mailto:abdulali0407@gmail.com">📧 Email</a>
                         </div>
 
 
-                        <div className="footSAB">
+                        <div className="footSB">
                             <h4>EcoTrack</h4>
                             <Link to="/features">Features</Link>
                             <Link to="/dashboard">Dashboard</Link>

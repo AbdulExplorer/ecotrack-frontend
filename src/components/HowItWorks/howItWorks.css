@@ -12,7 +12,6 @@ box-shadow:
         /* 0 0 30px rgb(255, 255, 255);  */
   border-radius: 50px;
     backdrop-filter: blur(10px);
-    height: 2200px;
 
 }
 #intro
@@ -32,7 +31,6 @@ box-shadow:
   margin: auto;
   font-size: 16px;
   opacity: 0.8;
-  
 }
 
 /* CARDS CONTAINER */
@@ -157,12 +155,3 @@ box-shadow:
   position: relative;
   overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
