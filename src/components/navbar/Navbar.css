@@ -81,13 +81,13 @@ background: rgba(0, 0, 0, 0.7);
     font-size: 18px;
     color: white;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.1s;
     cursor: pointer;
 }
 
 .s:hover { color: #8b9d7c; }
 
-.s i { transition: 0.3s; }
+.s i { transition: 0.1s; }
 .s:hover i { transform: scaleY(-1); }
 
 /* HAMBURGER */
@@ -144,7 +144,7 @@ background: rgba(0, 0, 0, 0.7);
     height: 45px;
     width: 150px;
     cursor: pointer;
-    font-size: medium;
+    font-size:small;
 
     border: 0.1px solid rgb(114, 114, 114);
     border-top-left-radius: 20px;
@@ -235,10 +235,11 @@ margin-right: 0px;
     height: 45px;
     width: 100px;
     cursor: pointer;
-    font-size: medium;
+    /* font-size: medium; */
     border: 1px black;
     border-radius: 50px;
-
+  
+    
     border: 0.1px solid rgb(114, 114, 114);
 
     margin-right: -45px;
@@ -257,6 +258,7 @@ margin-right: 0px;
     height: 45px;
     width: 100px;
     font-size: medium;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 50px;
     border: 1px black;
     text-decoration: none;
@@ -331,7 +333,7 @@ margin-right: 0px;
 @media (min-width: 1200px) {
     .navSections { gap: 40px; }
     .fluid-container { padding: 0 60px; }
-    .s { font-size: 18px; }
+    .s { font-size: 16px; }
 }
 
 

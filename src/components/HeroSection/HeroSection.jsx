@@ -55,7 +55,7 @@ const HeroSection = () => {
               }, 100);
             }}
           >
-            Learn How It Works
+            Learn More
           </button>
 
           <Link to="/add-activity" className="btn2">
