@@ -21,10 +21,10 @@ const IntroSection = () => {
   };
 
   return (
-    <div>
+    <div className="howItWorks">
       <div id="intro"></div>
 
-      <section className="intro-section" data-aos="fade-up">
+      <section className="intro-sectionh" data-aos="fade-up">
 
         {/* Header */}
         <div className="intro-header" data-aos="fade-up" data-aos-delay="100">

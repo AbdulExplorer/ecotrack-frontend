@@ -1,0 +1,38 @@
+.page {
+  background: white;
+}
+
+/* Wrapper */
+.reveal-section {
+  position: relative;
+}
+
+/* HowItWorks stays above */
+.howItWorks {
+  position: relative;
+  z-index: 2;
+  background: white;
+  min-height: 100vh;
+}
+
+/* Footer stays below */
+.footer {
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* Scroll space create karo */
+.reveal-section::after {
+  content: "";
+  display: block;
+  height: 200px;
+}
+
+.page {
+  background: white;
+}
+
+.reveal-section {
+  position: relative;
+}
