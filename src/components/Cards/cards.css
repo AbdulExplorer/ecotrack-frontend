@@ -92,7 +92,7 @@ box-shadow:
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-top: -50px;
+  /* padding-top: -50px; */
 }
 
 /* EMOJI */

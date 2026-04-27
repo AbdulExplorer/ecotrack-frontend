@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Reports.css";
 
