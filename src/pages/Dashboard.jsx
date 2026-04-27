@@ -8,7 +8,7 @@ import HowItWorks from "../components/HowItWorks/HowItWorks";
 function Dashboard() {
 
   
-  return (
+  return (  
     <div>
       {/* <LeafAnimation /> */}
       <Navbar />

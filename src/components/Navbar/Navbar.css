@@ -1,0 +1,398 @@
+/* Navbar.css — cleaned up */
+
+.fluid-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+
+    /* background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
+
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+#navScroll.scrolled {
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+    /* background: black; */
+    transition: all 0.3s ease;
+}
+
+/* LOGO */
+.logo
+{
+    display: flex;
+    align-items: center;
+    
+}
+#logo{
+    height: 25px;
+    transition: 0.3s;
+    
+}
+#logo:hover{
+    transform: scale(0.95);
+}
+
+/* NAV LINKS */
+.navSections {
+    display: none; /* hidden on mobile */
+}
+
+.navSections.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 95px; 
+    left: 20px;
+    right: 20px;
+    width: auto;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(15px);
+    padding: 20px 0;
+    gap: 20px;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    border-radius: 25px;
+    
+}
+
+.s {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.s:hover { color: #8b9d7c; }
+
+.s i { transition: 0.1s; }
+.s:hover i { transform: scaleY(-1); }
+
+/* HAMBURGER */
+.hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* TOGGLE */
+.toggle {
+    display: none; /* hidden on mobile */
+    height: 33px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #aaa;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: -180px;
+}
+
+@media (max-width: 1251px) {
+    .toggle {
+        /* display: flex; */
+    margin-right: 0px;
+
+    }
+}
+
+.circle {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 1.5px;
+    left: 1.5px;
+    transition: transform 0.3s;
+}
+
+.toggle.active { background-color: #aaa; }
+.toggle.active .circle {
+    transform: translateX(37px);
+    background-color: #8b9d7c;
+}
+
+/* AUTH BUTTONS */
+.logSign {
+    display: none; /* hidden on mobile by default */
+    align-items: center;
+    height: 45px;
+    width: 150px;
+    cursor: pointer;
+    font-size:small;
+
+    border: 0.1px solid rgb(114, 114, 114);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    margin-right: -45px;
+    /* overflow: hidden; */
+}
+
+/* Show on tablet+ */
+@media (min-width: 768px) {
+    .logSign {
+        display: flex;
+    }
+    .logou{
+        display: flex;
+
+    }
+}
+
+@media (max-width: 1251px) {
+    .logSign {
+        display: flex;
+    margin-right: 0px;
+    }
+     .logou{
+        display: flex;
+margin-right: 0px;
+    }
+}
+
+/* Also show inside mobile dropdown */
+.navSections.active .logSign {
+    display: flex;
+}
+
+.reg {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 75px;
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 75px;
+    padding-left: 10px;
+    border-left: 0.1px solid rgb(114, 114, 114);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    z-index: 1;
+    padding-left: 15px;
+}
+
+.reg:hover {
+    background: #8b9d7c;
+    transform: scale(1.2);
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.log:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.2);
+    /* width: 85px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.logou{
+    display: none; /* hidden on mobile by default */
+    align-items: center;
+    height: 45px;
+    width: 100px;
+    cursor: pointer;
+    /* font-size: medium; */
+    border: 1px black;
+    border-radius: 50px;
+  
+    
+    border: 0.1px solid rgb(114, 114, 114);
+
+    margin-right: -45px;
+
+}
+.navSections.active .logou {
+    display: flex;
+}
+.navSections.active .logSign {
+    display: flex;
+}
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100px;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+    border: 1px black;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    z-index: 1;
+    background: none;
+}
+.logout:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TABLET+ (≥768px) */
+@media (min-width: 768px) {
+
+    .logou{
+
+    margin-right: -45px;
+
+}
+
+.logo
+{
+    margin-left: 0px;
+}
+
+    .navSections {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .navSections.active {
+        /* reset mobile active styles */
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        top: auto;
+    }
+
+    .hamburger { display: none; }
+    .logSign { display: flex; }
+    .toggle { display: block; }
+    .fluid-container { padding: 0 20px; }
+}
+
+/* LAPTOP (≥992px) */
+@media (min-width: 992px) {
+    .navSections { gap: 30px; }
+    .fluid-container { padding: 0 40px; }
+    .s { font-size: 17px; }
+.logo
+{
+    margin-left: 10px;
+}
+    
+}
+
+/* DESKTOP (≥1200px) */
+@media (min-width: 1200px) {
+    .navSections { gap: 40px; }
+    .fluid-container { padding: 0 60px; }
+    .s { font-size: 16px; }
+}
+
+
+
+/* Mobile extras row (toggle + auth inside dropdown) */
+.mobileExtras {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    justify-content: center;
+}
+
+/* Inside mobile menu, logSign must be visible */
+.navSections.active .logSign {
+    display: flex;
+}
+
+/* Inside mobile menu, toggle must be visible */
+.navSections.active .toggle {
+    display: block;
+}
+
+/* Hide desktop duplicates on mobile */
+.desktopOnly {
+    display: none;
+}
+
+/* On tablet+, show desktop versions, hide mobile extras */
+@media (min-width: 768px) {
+
+
+    .logo
+{
+    margin-left: -30px;
+}
+
+    #logo{
+    height: 30px;
+    transition: 0.3s;
+    
+}
+    
+    .desktopOnly {
+        display: flex;
+    }
+
+    .toggle.desktopOnly {
+        display: block;
+    }
+
+    .mobileExtras {
+        display: none;
+    }
+
+    .circle {
+    top: 1.5px;
+    left: 2px;
+}
+}
