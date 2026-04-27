@@ -1,8 +1,8 @@
 import Navbar from "../components/navbar/Navbar";
 import HeroSection from "../components/HeroSection/HeroSection";
 import IntroSection from "../components/IntroSection/IntroSection";
-import Footer from "../components/Footer/footer";
-import HowItWorks from "../components/HowItWorks/howItWorks";
+import Footer from "../components/Footer/Footer";
+import HowItWorks from "../components/HowItWorks/HowItWorks";
 // import LeafAnimation from "../components/LeafAnimation/LeafAnimation";
 
 function Dashboard() {

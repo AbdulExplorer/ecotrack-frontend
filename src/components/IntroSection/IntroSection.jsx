@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./IntroSection.css";
-import Cards from "../Cards/cards";
+import Cards from "../Cards/Cards";
 
 
 

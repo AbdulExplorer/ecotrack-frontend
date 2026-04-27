@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./howItWorks.css";
+import "./HowItWorks.css";
 
 import b1 from "../../assets/b1.mp4";
 import b2 from "../../assets/b4.mp4";

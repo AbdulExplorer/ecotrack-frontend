@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./cards.css";
+import "./Cards.css";
 
 
 export default function ScrollCards() {
