@@ -143,6 +143,7 @@
 
   color: white;
   /* text-align: center; */
+  /* margin-bottom: 0px; */
 }
 
 .form-box input,
@@ -159,6 +160,8 @@
 
   outline: none;
 }
+
+
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -274,13 +277,7 @@ button[type="submit"]:hover {
   transform: translateY(-2px);
 }
 
-/* Result box */
-.result-box {
-  margin-top: 20px;
-  padding: 20px;
-  background: #f5f5f5;
-  border: 1px solid #ddd;
-}
+
 
 @media (max-width: 767px) {
 

@@ -7,7 +7,7 @@ import bgVideo from "../../assets/gbg2.mp4";
 
 function AddActivity() {
   const [showPopup, setShowPopup] = useState(false);
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     category: "",
     subType: "",
@@ -92,163 +92,162 @@ const navigate = useNavigate();
 
   return (
     <div>
-      <Navbar />
+      <div>
+        <Navbar />
 
-      <video autoPlay loop muted playsInline className="auth-video">
-        <source src={bgVideo} type="video/mp4" />
-      </video>
-      <div className="overlayA"></div>
+        <video autoPlay loop muted playsInline className="auth-video">
+          <source src={bgVideo} type="video/mp4" />
+        </video>
+        <div className="overlayA"></div>
 
-      <div className="container">
-        <div className="form-wrapper">
+        <div className="container">
+          <div className="form-wrapper">
 
-          <h1>Add Activity</h1>
+            <h1>Add Activity</h1>
 
-          <div className="category-bar">
-            {categories.map((cat) => (
-              <button
-                key={cat.value}
-                type="button"
-                className={`cat-btn ${formData.category === cat.value ? "active" : ""
-                  }`}
-                onClick={() => {
-                  setFormData((prev) => ({
-                    ...prev,
-                    category: cat.value,
-                    subType: "",
-                  }));
-                }}
-              >
-                <span>{cat.name}</span>
-              </button>
-            ))}
-          </div>
-
-          <div className="form-box">
-
-            {!formData.category && (
-              <p className="placeholder">
-                Select a category above
-              </p>
-            )}
-
-            {formData.category && (
-              <form onSubmit={handleSubmit}>
-
-                <label>Type</label>
-                <select
-                  name="subType"
-                  value={formData.subType}
-                  onChange={handleChange}
-                  required
+            <div className="category-bar">
+              {categories.map((cat) => (
+                <button
+                  key={cat.value}
+                  type="button"
+                  className={`cat-btn ${formData.category === cat.value ? "active" : ""
+                    }`}
+                  onClick={() => {
+                    setFormData((prev) => ({
+                      ...prev,
+                      category: cat.value,
+                      subType: "",
+                    }));
+                  }}
                 >
-                  <option value="">Select Type</option>
+                  <span>{cat.name}</span>
+                </button>
+              ))}
+            </div>
 
-                  {formData.category === "Transport" && (
-                    <>
-                      <option>Car</option>
-                      <option>Bike/Scooter</option>
-                      <option>Bus</option>
-                    </>
-                  )}
+            <div className="form-box">
 
-                  {formData.category === "Food" && (
-                    <>
-                      <option>Veg Meal</option>
-                      <option>Non-Veg Meal</option>
-                    </>
-                  )}
+              {!formData.category && (
+                <p className="placeholder">
+                  Select a category above
+                </p>
+              )}
 
-                  {formData.category === "Electricity" && (
-                    <option>Units (kWh)</option>
-                  )}
+              {formData.category && (
+                <form onSubmit={handleSubmit}>
 
-                  {formData.category === "Waste" && (
-                    <option>Kg of Waste</option>
-                  )}
-                </select>
+                  <label>Type</label>
+                  <select
+                    name="subType"
+                    value={formData.subType}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="">Select Type</option>
 
-                <label>Value</label>
-                <input
-                  type="number"
-                  placeholder="0"
-                  name="value"
-                  value={formData.value}
-                  onChange={handleChange}
-                  required
-                />
+                    {formData.category === "Transport" && (
+                      <>
+                        <option>Car</option>
+                        <option>Bike/Scooter</option>
+                        <option>Bus</option>
+                      </>
+                    )}
 
-                <small>
-                  {formData.category === "Transport" && "(in kilometers)"}
-                  {formData.category === "Food" && "(number of meals)"}
-                  {formData.category === "Electricity" && "(kWh)"}
-                  {formData.category === "Waste" && "(kg)"}
-                </small>
+                    {formData.category === "Food" && (
+                      <>
+                        <option>Veg Meal</option>
+                        <option>Non-Veg Meal</option>
+                      </>
+                    )}
 
-                <label>Date</label>
-                <input
-                  type="date"
-                  name="date"
-                  value={formData.date}
-                  onChange={handleChange}
-                />
+                    {formData.category === "Electricity" && (
+                      <option>Units (kWh)</option>
+                    )}
 
-                <label>Note</label>
-                <textarea
-                  name="note"
-                  value={formData.note}
-                  onChange={handleChange}
-                />
+                    {formData.category === "Waste" && (
+                      <option>Kg of Waste</option>
+                    )}
+                  </select>
 
-                <button type="submit">Calculate</button>
+                  <label>Value</label>
+                  <input
+                    type="number"
+                    placeholder="0"
+                    name="value"
+                    value={formData.value}
+                    onChange={handleChange}
+                    required
+                  />
 
-              </form>
-            )}
+                  <small>
+                    {formData.category === "Transport" && "(in kilometers)"}
+                    {formData.category === "Food" && "(number of meals)"}
+                    {formData.category === "Electricity" && "(kWh)"}
+                    {formData.category === "Waste" && "(kg)"}
+                  </small>
+
+                  <label>Date</label>
+                  <input
+                    type="date"
+                    name="date"
+                    value={formData.date}
+                    onChange={handleChange}
+                  />
+
+                  <label>Note</label>
+                  <textarea
+                    name="note"
+                    value={formData.note}
+                    onChange={handleChange}
+                  />
+
+                  <button type="submit">Calculate</button>
+
+                </form>
+              )}
+
+            </div>
+
+
+
 
           </div>
 
-          {/* {result && (
-            <div className="result-box">
-              <h2> Result</h2>
-              <p><strong>CO2:</strong> {result.co2} kg</p>
-              <p><strong>Status:</strong> {result.status}</p>
-              <p><strong>Tip:</strong> {result.tip}</p>
-            </div>
-          )} */}
-
-          {showPopup && result && (
-            <div className="popup-overlay">
-              <div className="popup-box">
-
-                <h2>
-                  <i className="bi bi-globe-americas"></i> Your Impact
-                </h2>
-
-                <p><strong>CO2:</strong> {result.co2} kg</p>
-                <p><strong>Status:</strong> {result.status}</p>
-                <p><strong>Tip:</strong> {result.tip}</p>
-
-              <div className="popBtn">
-                {/* View Reports Button */}
-                <button className="cat-btn" onClick={() => navigate("/reports")}>
-                  View Reports
-                </button>
-
-                {/* Close Button */}
-                <button className="cat-btn" onClick={() => setShowPopup(false)}>
-                  Add More
-                </button>
-              </div>
-                
-
-              </div>
-            </div>
-          )}
         </div>
-
       </div>
+
+      {showPopup && result && (
+        <div className="popup-overlay">
+          <div className="popup-box">
+
+            <h2>
+              <i className="bi bi-globe-americas"></i> Your Impact
+            </h2>
+
+            <p><strong>CO2:</strong> {result.co2} kg</p>
+            <p><strong>Status:</strong> {result.status}</p>
+            <p><strong>Tip:</strong> {result.tip}</p>
+
+            <div className="popBtn">
+              {/* View Reports Button */}
+              <button className="cat-btn" onClick={() => navigate("/reports")}>
+                View Reports
+              </button>
+
+              {/* Close Button */}
+              <button className="cat-btn" onClick={() => setShowPopup(false)}>
+                Add More
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+
     </div>
   );
+
+
 }
 
 export default AddActivity;

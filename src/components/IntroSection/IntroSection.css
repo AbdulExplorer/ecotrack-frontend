@@ -6,14 +6,11 @@
   /* margin-top: 40px; */
   margin-left: 12px;
   margin-right: 12px;
-    border: 10px solid rgb(62, 74, 50);
-box-shadow: 
-        0 0 25px rgb(13, 26, 2);
-        /* 0 0 30px rgb(255, 255, 255);  */
+  border: 10px solid rgb(62, 74, 50);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.526);
   border-radius: 50px;
-    backdrop-filter: blur(10px);
-    height: 1870px;
-
+  backdrop-filter: blur(10px);
+  height: 1870px;
 }
 
 @media (min-width: 1200px) {
@@ -23,13 +20,18 @@ box-shadow:
   }
 }
 
-#intro
-{
+#intro {
   height: 100px;
   width: 100%;
 }
 
 /* HEADER */
+
+.intro-header
+{
+  margin-bottom: -55px;
+}
+
 .intro-header h2 {
   font-size: 40px;
   margin-bottom: 15px;
@@ -40,7 +42,7 @@ box-shadow:
   margin: auto;
   font-size: 16px;
   opacity: 0.8;
-  
+
 }
 
 /* CARDS CONTAINER */
@@ -50,7 +52,7 @@ box-shadow:
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  }
+}
 
 /* CARD */
 .card {
@@ -66,14 +68,14 @@ box-shadow:
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, background 0.3s ease;
   border: 2px solid rgb(62, 74, 50);
-box-shadow: 
-        0 0 10px rgba(110, 115, 106, 0.437);
-        /* 0 0 30px rgb(255, 255, 255);  */
+  box-shadow:
+    0 0 10px rgba(110, 115, 106, 0.437);
+  /* 0 0 30px rgb(255, 255, 255);  */
 }
 
 /* HOVER EFFECT */
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
   background: rgba(255, 255, 255, 0.886);
 }
 
@@ -111,8 +113,7 @@ box-shadow:
 /* DESKTOP */
 @media (min-width: 1200px) {
 
-  .intro-section
-  {
+  .intro-section {
     height: 2200px;
 
   }
@@ -120,10 +121,10 @@ box-shadow:
   .intro-header h2 {
     font-size: 50px;
   }
-  .intro-section
-  {
+
+  .intro-section {
     margin-left: 150px;
-  margin-right: 150px;
+    margin-right: 150px;
   }
 
   .card {
@@ -172,12 +173,3 @@ box-shadow:
   position: relative;
   overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
