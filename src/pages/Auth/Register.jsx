@@ -37,7 +37,7 @@ function Register() {
     }));
   };
 
-  // 🔥 FINAL SUBMIT (CONNECTED TO BACKEND)
+  // FINAL SUBMIT (CONNECTED TO BACKEND)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -69,7 +69,7 @@ function Register() {
       setSuccess("Registration successful ✅");
       setError("");
 
-      // 🔥 redirect after signup
+      // redirect after signup
       setTimeout(() => {
         navigate("/login");
       }, 1200);

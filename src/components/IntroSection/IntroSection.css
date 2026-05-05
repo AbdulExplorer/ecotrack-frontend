@@ -10,7 +10,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.526);
   border-radius: 50px;
   backdrop-filter: blur(10px);
-  height: 1870px;
+  height: 1830px;
 }
 
 @media (min-width: 1200px) {
@@ -114,7 +114,7 @@
 @media (min-width: 1200px) {
 
   .intro-section {
-    height: 2200px;
+    height: 2150px;
 
   }
 
@@ -147,13 +147,13 @@
   z-index: 0;
 }
 
-/* 🧠 Content above video */
+/* Content above video */
 .content {
   position: relative;
   z-index: 2;
 }
 
-/* 🌑 overlay for readability */
+/* overlay for readability */
 .card::after {
   content: "";
   position: absolute;
@@ -163,7 +163,7 @@
   border-radius: 20px;
 }
 
-/* 🔥 show video on hover */
+/* show video on hover */
 .card:hover .bg-video {
   opacity: 1;
 }

@@ -26,19 +26,15 @@ const IntroSection = () => {
 
       <section className="intro-sectionh" data-aos="fade-up">
 
-        {/* Header */}
-        <div className="intro-header" data-aos="fade-up" data-aos-delay="100">
+        <div className="intro-headerh" data-aos="fade-up" data-aos-delay="100">
           <h2>How it Works?</h2>
-          <p>
-            Every action you take leaves a mark on the planet. 
-            Your carbon footprint is the total CO₂ produced by your daily activities.
-          </p>
+          
         </div>
 
         {/* Cards */}
         <div className="intro-cards">
 
-          {/* 🚗 CARD 1 */}
+          {/* CARD 1 */}
           <div
             className="card"
             data-aos="fade-up"
@@ -57,7 +53,7 @@ const IntroSection = () => {
             </div>
           </div>
 
-          {/* ⚡ CARD 2 */}
+          {/* CARD 2 */}
           <div
             className="card"
             data-aos="fade-up"
@@ -76,7 +72,7 @@ const IntroSection = () => {
             </div>
           </div>
 
-          {/* 🍔 CARD 3 */}
+          {/* CARD 3 */}
           <div
             className="card"
             data-aos="fade-up"

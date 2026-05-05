@@ -13,13 +13,13 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [user, setUser] = useState(null);
 
-  // 🔥 USER UPDATE (IMPORTANT FIX)
+  // USER UPDATE (IMPORTANT FIX)
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
     setUser(JSON.parse(storedUser));
   }, [location.pathname]);
 
-  // 🔥 LOGOUT
+  // LOGOUT
   const handleLogout = () => {
     localStorage.removeItem("user");
     setUser(null);
@@ -74,7 +74,7 @@ function Navbar() {
             <div className="circle"></div>
           </div>
 
-          {/* ✅ Login/Register */}
+          {/* Login/Register */}
           {!user && (
             <div className="logSign">
               <Link className="reg" to="/register" onClick={() => setMenuOpen(false)}>Register</Link>
@@ -82,7 +82,7 @@ function Navbar() {
             </div>
           )}
 
-          {/* ✅ Logout */}
+          {/* Logout */}
           {user && (
             <div className="logou">
               <button className="logout" onClick={handleLogout}>Logout</button>
@@ -102,7 +102,7 @@ function Navbar() {
 
       {/* Desktop Auth */}
 
-      {/* ✅ Login/Register */}
+      {/* Login/Register */}
       {!user && (
         <div className="logSign desktopOnly">
           <Link className="reg" to="/register">Register</Link>
@@ -110,7 +110,7 @@ function Navbar() {
         </div>
       )}
 
-      {/* ✅ Logout */}
+      {/* Logout */}
       {user && (
         <div className="logou desktopOnly">
           <button className="logout" onClick={handleLogout}>Logout</button>

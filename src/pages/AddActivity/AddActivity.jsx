@@ -81,7 +81,7 @@ function AddActivity() {
         status: status.label,
         tip: status.tip,
       });
-      setShowPopup(true); // 🔥 open popup
+      setShowPopup(true); // open popup
 
     } catch (err) {
       console.error(err);

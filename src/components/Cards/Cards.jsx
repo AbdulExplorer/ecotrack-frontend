@@ -58,7 +58,7 @@ const cardVariants = {
 
 const food = [
   ["🚗", "Transportation","Driving vehicles releases carbon dioxide into the air.", "#161716", "#18230c"],
-  ["🍔", "Food", "Using electricity contributes to carbon emissions.", "#161716", "#18230c"],
-  ["⚡", "Electricity", "Your eating habits and lifestyle choices impact the planet.", "#161716", "#18230c"],
+  ["🍔", "Food", "Your eating habits and lifestyle choices impact the planet." , "#161716", "#18230c"],
+  ["⚡", "Electricity", "Using electricity contributes to carbon emissions." , "#161716", "#18230c"],
   ["🛍️", "Waste", "Waste generation impacts the environment and increases pollution.", "#161716", "#18230c"],
 ];

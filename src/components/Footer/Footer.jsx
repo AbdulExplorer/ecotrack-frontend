@@ -28,7 +28,7 @@ const Footer = () => {
 
                     <div className="footSB">
                             <h4>Contact</h4>
-                            <a href="tel:+91XXXXXXXXXX">📞 Phone</a>
+                            <a href="tel:+917772986077">📞 Phone</a>
                             <a href="mailto:abdulali0407@gmail.com">📧 Email</a>
                         </div>
 

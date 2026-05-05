@@ -27,7 +27,7 @@ function Login() {
     }));
   };
 
-  // 🔥 FINAL LOGIN FUNCTION
+  // FINAL LOGIN FUNCTION
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -52,13 +52,13 @@ function Login() {
 
       const data = await res.json();
 
-      // ✅ Save user
+      // Save user
       localStorage.setItem("user", JSON.stringify(data));
 
       setSuccess("Login successful ✅");
       setError("");
 
-      // ✅ Redirect
+      // Redirect
       window.location.href = "/dashboard"; //reload
 
     } catch (err) {

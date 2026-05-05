@@ -4,11 +4,11 @@
   color: rgb(255, 255, 255);
   text-align: center;
   /* margin-top: 40px; */
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
     border: 10px solid rgb(62, 74, 50);
-box-shadow: 
-        0 0 25px rgb(13, 26, 2);
+/* box-shadow: 
+        0 0 25px rgb(13, 26, 2); */
         /* 0 0 30px rgb(255, 255, 255);  */
   border-radius: 50px;
     backdrop-filter: blur(10px);
@@ -21,16 +21,9 @@ box-shadow:
 }
 
 /* HEADER */
-.intro-header h2 {
+.intro-headerh h2 {
   font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.intro-header p {
-  max-width: 600px;
-  margin: auto;
-  font-size: 16px;
-  opacity: 0.8;
+  margin-bottom: 60px;
 }
 
 /* CARDS CONTAINER */
@@ -38,7 +31,7 @@ box-shadow:
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
   }
 
@@ -100,10 +93,10 @@ box-shadow:
 
 /* DESKTOP */
 @media (min-width: 1200px) {
-  .intro-header h2 {
+  .intro-headerh h2 {
     font-size: 50px;
   }
-  .intro-section
+  .intro-sectionh
   {
     margin-left: 150px;
   margin-right: 150px;
@@ -115,7 +108,7 @@ box-shadow:
 }
 
 
-/* 🎥 VIDEO BACKGROUND */
+/* VIDEO BACKGROUND */
 .bg-video {
   position: absolute;
   top: 0;
@@ -129,13 +122,13 @@ box-shadow:
   z-index: 0;
 }
 
-/* 🧠 Content above video */
+/* Content above video */
 .content {
   position: relative;
   z-index: 2;
 }
 
-/* 🌑 overlay for readability */
+/* overlay for readability */
 .card::after {
   content: "";
   position: absolute;
@@ -145,7 +138,7 @@ box-shadow:
   border-radius: 20px;
 }
 
-/* 🔥 show video on hover */
+/* show video on hover */
 .card:hover .bg-video {
   opacity: 1;
 }
