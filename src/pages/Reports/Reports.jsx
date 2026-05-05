@@ -17,6 +17,7 @@ import {
   Legend,
 } from "chart.js";
 import { div } from "framer-motion/client";
+import { correctBorderRadius } from "framer-motion";
 
 ChartJS.register(
   LineElement,

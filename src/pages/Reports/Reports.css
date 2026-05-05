@@ -1,4 +1,4 @@
-/* 🌌 ROOT */
+/*  ROOT */
 /* body {
   background: #0f1117;
   color: #fff;
@@ -60,7 +60,7 @@
   font-size: 15px;
 }
 
-/* 🔥 RESPONSIVE GRID (MAIN FIX) */
+/* RESPONSIVE GRID (MAIN FIX) */
 .charts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* ⭐ MAGIC */
