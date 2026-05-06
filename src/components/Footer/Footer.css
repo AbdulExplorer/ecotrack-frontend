@@ -2,16 +2,19 @@
   background: #0e0e0e;
   color: white;
   margin-top: 150px;
-  padding-bottom: 40px;
+  padding-bottom: 15px;
+
+   border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 /* Top white curve */
-.whitebar {
+/* .whitebar {
   height: 70px;
   background: #E9E6DF;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-}
+} */
 
 /* Main layout */
 .foot {
@@ -19,8 +22,8 @@
   justify-content: space-around;
   align-items: center   ;
   flex-wrap: wrap;
-  gap: 40px;
-  padding: 155px 80px;
+  gap: 30px;
+  padding: 100px 80px;
 }
 
 /* Left section */
@@ -73,7 +76,7 @@
 .footline {
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
-  margin: 20px 40px;
+  margin: 10px 40px;
 }
 
 /* Bottom */
@@ -102,8 +105,8 @@
 .blackbar {
   background: black;
   text-align: center;
-  padding: 36px;
-  color: white;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.836);
 }
 
 /* Responsive */
@@ -176,12 +179,12 @@
 
   .footSAB h4,
   .footSB h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .footSAB a,
   .footSB a {
-    font-size: 17px;
+    font-size: 15px;
 
   }
 
@@ -190,7 +193,7 @@
   }
 
   .smf a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

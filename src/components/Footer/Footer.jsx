@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <>
             <footer className="footer">
-                <div className="whitebar"></div>
+                {/* <div className="whitebar"></div> */}
 
                 <div className="foot">
                     {/* LEFT */}

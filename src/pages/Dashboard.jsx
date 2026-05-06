@@ -16,7 +16,6 @@ function Dashboard() {
       <IntroSection />
       {/* <Cards /> */}
       <HowItWorks />
-      <h1>Dashboard</h1>
       <Footer />
 
     </div>

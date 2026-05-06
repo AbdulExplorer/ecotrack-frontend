@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import bgVideo from "../../assets/gbg2.mp4";
+import Footer from "../../components/Footer/Footer";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Reports.css";
 import { useEffect, useState } from "react";
@@ -155,8 +156,8 @@ const email = user?.email;
 
   {/* Summary */}
   <div className="summary">
-    <div className="card"> <i className="bi bi-globe-americas"></i> {totalCO2.toFixed(2)} kg CO2</div>
-    <div className="card"><i class="bi bi-clipboard2-data-fill"></i> {data.length} Activities</div>
+    <div className="cardt"> <i className="bi bi-globe-americas"></i> {totalCO2.toFixed(2)} kg CO2</div>
+    <div className="cardt"><i class="bi bi-clipboard2-data-fill"></i> {data.length} Activities</div>
   </div>
 
   {/* Suggestion */}
@@ -224,6 +225,7 @@ const email = user?.email;
   </div>
 
 </div>
+      <Footer />
 </div>
   );
 }

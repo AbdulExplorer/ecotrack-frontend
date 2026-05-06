@@ -23,7 +23,7 @@
 }
 
 /* CARD  */
-.card, .chart-box, .table-container, .suggestion {
+.cardt, .chart-box, .table-container, .suggestion {
   /* background: rgba(255, 255, 255, 0.05); */
   border-radius: 14px;
   padding: 18px;
@@ -40,16 +40,23 @@
   display: flex;
   gap: 15px;
   margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
+.cardt {
   flex: 1;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   transition: 0.3s;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.card:hover {
+.cardt:hover {
   transform: translateY(-4px);
 }
 
