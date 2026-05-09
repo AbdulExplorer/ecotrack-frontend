@@ -246,7 +246,7 @@ function AddActivity() {
         </div>
       )}
       
-      <Footer />
+      {/* <Footer /> */}
       
     </div>
   );

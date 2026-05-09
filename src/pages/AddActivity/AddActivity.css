@@ -406,15 +406,3 @@ cat-btn:active {
   padding-bottom: 40px;   /* add this to existing rule */
 }
 
-
-
-
-/* for removing footer in phone */
-  @media (max-width: 767px) {
-  .add-activity-page footer {
-    display: none;
-  }
-  .blackbar{
-    /* display: none; */
-  }
-}
