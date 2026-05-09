@@ -48,7 +48,9 @@ function Register() {
     }
 
     try {
-      const res = await fetch("http://localhost:8080/api/auth/signup", {
+      // const res = await fetch("http://localhost:8080/api/auth/signup", {
+      const res = await fetch("https://ecotrack-backend-4our.onrender.com/api/auth/signup", {
+
         method: "POST",
         headers: {
           "Content-Type": "application/json"

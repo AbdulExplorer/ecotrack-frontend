@@ -56,7 +56,9 @@ function AddActivity() {
     }
 
     try {
-      const res = await fetch("http://localhost:8080/api/activity/add", {
+      // const res = await fetch("http://localhost:8080/api/activity/add", {
+      const res = await fetch("https://ecotrack-backend-4our.onrender.com/api/activity/add", {
+
         method: "POST",
         headers: {
           "Content-Type": "application/json"

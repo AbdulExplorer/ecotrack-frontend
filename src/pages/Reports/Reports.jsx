@@ -75,7 +75,8 @@ const email = user?.email;
       }
 
       const res = await axios.get(
-        `http://localhost:8080/api/report/user/${email}`
+        // `http://localhost:8080/api/report/user/${email}`
+        `https://ecotrack-backend-4our.onrender.com/api/report/user/{email}`
       );
 
       setData(res.data);
