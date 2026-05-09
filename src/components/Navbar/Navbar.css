@@ -396,3 +396,140 @@ margin-right: 0px;
     left: 2px;
 }
 }
+
+
+
+
+
+
+
+
+/* ── MOBILE: hide navSections and desktopOnly by default ── */
+.navSections  { display: none; }
+.desktopOnly  { display: none; }
+
+/* ── MOBILE DROPDOWN (toggle + auth only) ── */
+.mobileDropdown {
+  display: none;
+}
+
+.mobileDropdown.active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+  padding: 16px 24px;
+  border-radius: 25px;
+  z-index: 999;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  justify-content: center;
+}
+
+
+/* ── BOTTOM NAV (mobile only) ── */
+.bottomNav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bottomNav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.2s;
+  padding: 6px 16px;
+}
+
+.bottomNav__item i {
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.bottomNav__item:hover,
+.bottomNav__item--active {
+  color: #8b9d7c;
+}
+
+.bottomNav__item--active i {
+  transform: scale(1.15);
+}
+
+
+/* ── TABLET+ (≥768px) ── */
+@media (min-width: 768px) {
+  .bottomNav      { display: none; }
+  .mobileDropdown { display: none !important; } /* never show on desktop */
+  .hamburger      { display: none; }
+
+  .desktopOnly { display: flex; }
+  .toggle.desktopOnly { display: block; }
+
+  .navSections {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .logSign { display: flex; margin-right: -45px; }
+  .logou   { display: flex; margin-right: -45px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mobileDropdown.active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+  padding: 16px 24px;
+  border-radius: 25px;
+  z-index: 999;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  justify-content: center;
+}
+
+/* ← Add these three */
+.mobileDropdown.active .toggle  { display: block; }
+.mobileDropdown.active .logSign { display: flex; }
+.mobileDropdown.active .logou   { display: flex; }

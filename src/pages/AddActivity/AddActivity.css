@@ -380,3 +380,28 @@ cat-btn:active {
 #pb{
   font-size: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding-bottom: 40px;   /* add this to existing rule */
+}

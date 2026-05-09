@@ -95,7 +95,7 @@ function AddActivity() {
 
   return (
     <div>
-      <div>
+      <div className="pageWrapper">
         <Navbar />
 
         <video autoPlay loop muted playsInline className="auth-video">
