@@ -94,7 +94,7 @@ function AddActivity() {
   };
 
   return (
-    <div>
+    <div className="add-activity-page">
       <div className="pageWrapper">
         <Navbar />
 
@@ -197,12 +197,12 @@ function AddActivity() {
                     onChange={handleChange}
                   />
 
-                  <label>Note</label>
+                  {/* <label>Note</label>
                   <textarea
                     name="note"
                     value={formData.note}
                     onChange={handleChange}
-                  />
+                  /> */}
 
                   <button type="submit">Calculate</button>
 
@@ -245,9 +245,9 @@ function AddActivity() {
           </div>
         </div>
       )}
-
+      
       <Footer />
-     
+      
     </div>
   );
 

@@ -32,12 +32,12 @@
 .form-wrapper {
   width: 90%;
   max-width: 900px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 /* Heading */
 .form-wrapper h1 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: white;
   font-size: 50px;
   
@@ -125,7 +125,7 @@
 /* FORM BOX (BIG BOX BELOW) */
 .form-box {
   border: 2px solid black;
-  padding: 40px;
+  padding: 30px;
   min-height: 350px;
 
   border-radius: 20px;
@@ -284,7 +284,7 @@ button[type="submit"]:hover {
   .form-wrapper h1 {
   /* margin-bottom: 40px; */
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   
 }
@@ -404,4 +404,17 @@ cat-btn:active {
 
 .container {
   padding-bottom: 40px;   /* add this to existing rule */
+}
+
+
+
+
+/* for removing footer in phone */
+  @media (max-width: 767px) {
+  .add-activity-page footer {
+    display: none;
+  }
+  .blackbar{
+    /* display: none; */
+  }
 }

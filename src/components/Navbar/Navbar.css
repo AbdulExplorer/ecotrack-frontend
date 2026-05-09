@@ -1,24 +1,20 @@
-/* Navbar.css — cleaned up */
+/* ── BASE (mobile-first) ── */
 
 .fluid-container {
     position: fixed;
     top: 20px;
     left: 20px;
     right: 20px;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(15px);
-
-    /* background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px); */
-
     border-radius: 50px;
     z-index: 1000;
+     isolation: isolate;
 }
 
 #navScroll.scrolled {
@@ -28,50 +24,29 @@
     border-radius: 0;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(15px);
-    /* background: black; */
     transition: all 0.3s ease;
 }
 
-/* LOGO */
-.logo
-{
+/* ── LOGO ── */
+.logo {
     display: flex;
     align-items: center;
-    
 }
-#logo{
+
+#logo {
     height: 25px;
     transition: 0.3s;
-    
 }
-#logo:hover{
+
+#logo:hover {
     transform: scale(0.95);
 }
 
-/* NAV LINKS */
+/* ── NAV LINKS (desktop only) ── */
 .navSections {
-    display: none; /* hidden on mobile */
-}
-
-.navSections.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 95px; 
-    left: 20px;
-    right: 20px;
-    width: auto;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(15px);
-    padding: 20px 0;
-    gap: 20px;
-    align-items: center;
-    z-index: 999;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-    border-radius: 25px;
-    
+    display: none;
 }
 
 .s {
@@ -86,21 +61,20 @@ background: rgba(0, 0, 0, 0.7);
 }
 
 .s:hover { color: #8b9d7c; }
-
 .s i { transition: 0.1s; }
 .s:hover i { transform: scaleY(-1); }
 
-/* HAMBURGER */
+/* ── HAMBURGER (mobile only) ── */
 .hamburger {
     display: block;
-    font-size: 28px;
+    font-size: 25px;
     cursor: pointer;
     color: white;
 }
 
-/* TOGGLE */
+/* ── TOGGLE ── */
 .toggle {
-    display: none; /* hidden on mobile */
+    display: none;
     height: 33px;
     width: 70px;
     border-radius: 20px;
@@ -109,15 +83,6 @@ background: rgba(0, 0, 0, 0.7);
     position: relative;
     cursor: pointer;
     transition: 0.3s;
-    margin-right: -180px;
-}
-
-@media (max-width: 1251px) {
-    .toggle {
-        /* display: flex; */
-    margin-right: 0px;
-
-    }
 }
 
 .circle {
@@ -137,50 +102,29 @@ background: rgba(0, 0, 0, 0.7);
     background-color: #8b9d7c;
 }
 
-/* AUTH BUTTONS */
+/* ── AUTH BUTTONS ── */
 .logSign {
-    display: none; /* hidden on mobile by default */
+    display: none;
     align-items: center;
     height: 45px;
     width: 150px;
     cursor: pointer;
-    font-size:small;
-
+    font-size: small;
     border: 0.1px solid rgb(114, 114, 114);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-
-    margin-right: -45px;
-    /* overflow: hidden; */
 }
 
-/* Show on tablet+ */
-@media (min-width: 768px) {
-    .logSign {
-        display: flex;
-    }
-    .logou{
-        display: flex;
-
-    }
-}
-
-@media (max-width: 1251px) {
-    .logSign {
-        display: flex;
-    margin-right: 0px;
-    }
-     .logou{
-        display: flex;
-margin-right: 0px;
-    }
-}
-
-/* Also show inside mobile dropdown */
-.navSections.active .logSign {
-    display: flex;
+.logou {
+    display: none;
+    align-items: center;
+    height: 45px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 0.1px solid rgb(114, 114, 114);
 }
 
 .reg {
@@ -202,7 +146,7 @@ margin-right: 0px;
     align-items: center;
     height: 45px;
     width: 75px;
-    padding-left: 10px;
+    padding-left: 15px;
     border-left: 0.1px solid rgb(114, 114, 114);
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -210,13 +154,11 @@ margin-right: 0px;
     color: white;
     transition: 0.3s;
     z-index: 1;
-    padding-left: 15px;
 }
 
 .reg:hover {
     background: #8b9d7c;
     transform: scale(1.2);
-    
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -225,33 +167,11 @@ margin-right: 0px;
     background-color: rgb(255, 255, 255);
     color: black;
     transform: scale(1.2);
-    /* width: 85px; */
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.logou{
-    display: none; /* hidden on mobile by default */
-    align-items: center;
-    height: 45px;
-    width: 100px;
-    cursor: pointer;
-    /* font-size: medium; */
-    border: 1px black;
-    border-radius: 50px;
-  
-    
-    border: 0.1px solid rgb(114, 114, 114);
 
-    margin-right: -45px;
-
-}
-.navSections.active .logou {
-    display: flex;
-}
-.navSections.active .logSign {
-    display: flex;
-}
-.logout{
+.logout {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,276 +180,156 @@ margin-right: 0px;
     font-size: medium;
     font-family: 'Montserrat', sans-serif;
     border-radius: 50px;
-    border: 1px black;
+    border: none;
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: 0.3s;
     z-index: 1;
     background: none;
+    cursor: pointer;
 }
+
 .logout:hover {
     background-color: rgb(255, 255, 255);
     color: black;
     transform: scale(1.1);
+}
+
+/* ── DESKTOP-ONLY ELEMENTS (hidden on mobile) ── */
+.desktopOnly {
+    display: none;
+}
+
+/* ── MOBILE DROPDOWN (toggle + auth only) ── */
+.mobileDropdown {
+    display: none;
+}
+
+.mobileDropdown.active {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 16px 24px;
+    border-radius: 50px;
+    z-index: 999;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
     justify-content: center;
 }
 
-/* TABLET+ (≥768px) */
+/* Force show toggle + auth inside mobile dropdown */
+.mobileDropdown.active .toggle  { display: block; }
+.mobileDropdown.active .logSign { display: flex; }
+.mobileDropdown.active .logou   { display: flex; }
+
+/* ── BOTTOM NAV (mobile only) ── */
+.bottomNav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.bottomNav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.2s;
+    padding: 6px 16px;
+}
+
+.bottomNav__item i {
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+.bottomNav__item:hover,
+.bottomNav__item--active {
+    color: #8b9d7c;
+}
+
+.bottomNav__item--active i {
+    transform: scale(1.15);
+}
+
+/* ── TABLET+ (≥768px) ── */
 @media (min-width: 768px) {
+    .fluid-container { padding: 0 20px; }
 
-    .logou{
+    .logo { margin-left: -30px; }
 
-    margin-right: -45px;
+    #logo { height: 30px; }
 
-}
-
-.logo
-{
-    margin-left: 0px;
-}
+    .hamburger      { display: none; }
+    .bottomNav      { display: none; }
+    .mobileDropdown { display: none !important; }
 
     .navSections {
         display: flex;
         flex-direction: row;
         position: static;
-        width: auto;
         background: transparent;
         padding: 0;
         gap: 20px;
         align-items: center;
     }
 
-    .navSections.active {
-        /* reset mobile active styles */
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background: transparent;
-        padding: 0;
-        top: auto;
-    }
-
-    .hamburger { display: none; }
-    .logSign { display: flex; }
-    .toggle { display: block; }
-    .fluid-container { padding: 0 20px; }
-}
-
-/* LAPTOP (≥992px) */
-@media (min-width: 992px) {
-    .navSections { gap: 30px; }
-    .fluid-container { padding: 0 40px; }
-    .s { font-size: 17px; }
-.logo
-{
-    margin-left: 10px;
-}
-    
-}
-
-/* DESKTOP (≥1200px) */
-@media (min-width: 1200px) {
-    .navSections { gap: 40px; }
-    .fluid-container { padding: 0 60px; }
-    .s { font-size: 16px; }
-}
-
-
-
-/* Mobile extras row (toggle + auth inside dropdown) */
-.mobileExtras {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    width: 100%;
-    justify-content: center;
-}
-
-/* Inside mobile menu, logSign must be visible */
-.navSections.active .logSign {
-    display: flex;
-}
-
-/* Inside mobile menu, toggle must be visible */
-.navSections.active .toggle {
-    display: block;
-}
-
-/* Hide desktop duplicates on mobile */
-.desktopOnly {
-    display: none;
-}
-
-/* On tablet+, show desktop versions, hide mobile extras */
-@media (min-width: 768px) {
-
-
-    .logo
-{
-    margin-left: -30px;
-}
-
-    #logo{
-    height: 30px;
-    transition: 0.3s;
-    
-}
-    
-    .desktopOnly {
-        display: flex;
-    }
-
-    .toggle.desktopOnly {
+    .toggle {
         display: block;
+        margin-right: -180px;
     }
 
-    .mobileExtras {
-        display: none;
+    .desktopOnly        { display: flex; }
+    .toggle.desktopOnly { display: block; }
+
+    .logSign {
+        display: flex;
+        margin-right: -45px;
+    }
+
+    .logou {
+        display: flex;
+        margin-right: -45px;
     }
 
     .circle {
-    top: 1.5px;
-    left: 2px;
-}
-}
-
-
-
-
-
-
-
-
-/* ── MOBILE: hide navSections and desktopOnly by default ── */
-.navSections  { display: none; }
-.desktopOnly  { display: none; }
-
-/* ── MOBILE DROPDOWN (toggle + auth only) ── */
-.mobileDropdown {
-  display: none;
+        top: 1.5px;
+        left: 2px;
+    }
 }
 
-.mobileDropdown.active {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-  position: absolute;
-  top: 95px;
-  left: 20px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(15px);
-  padding: 16px 24px;
-  border-radius: 25px;
-  z-index: 999;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-  justify-content: center;
+/* ── LAPTOP (≥992px) ── */
+@media (min-width: 992px) {
+    .fluid-container { padding: 0 40px; height: 70px; }
+    .navSections { gap: 30px; }
+    .s { font-size: 17px; }
+    .logo { margin-left: 10px; }
 }
 
-
-/* ── BOTTOM NAV (mobile only) ── */
-.bottomNav {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 64px;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  justify-content: space-around;
-  align-items: center;
-  z-index: 1000;
+/* ── DESKTOP (≥1200px) ── */
+@media (min-width: 1200px) {
+    .fluid-container { padding: 0 60px; height: 70px; }
+    .navSections { gap: 40px; }
+    .s { font-size: 16px; }
 }
-
-.bottomNav__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
-  transition: color 0.2s;
-  padding: 6px 16px;
-}
-
-.bottomNav__item i {
-  font-size: 20px;
-  transition: transform 0.2s;
-}
-
-.bottomNav__item:hover,
-.bottomNav__item--active {
-  color: #8b9d7c;
-}
-
-.bottomNav__item--active i {
-  transform: scale(1.15);
-}
-
-
-/* ── TABLET+ (≥768px) ── */
-@media (min-width: 768px) {
-  .bottomNav      { display: none; }
-  .mobileDropdown { display: none !important; } /* never show on desktop */
-  .hamburger      { display: none; }
-
-  .desktopOnly { display: flex; }
-  .toggle.desktopOnly { display: block; }
-
-  .navSections {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background: transparent;
-    padding: 0;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .logSign { display: flex; margin-right: -45px; }
-  .logou   { display: flex; margin-right: -45px; }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.mobileDropdown.active {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-  position: absolute;
-  top: 95px;
-  left: 20px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(15px);
-  padding: 16px 24px;
-  border-radius: 25px;
-  z-index: 999;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-  justify-content: center;
-}
-
-/* ← Add these three */
-.mobileDropdown.active .toggle  { display: block; }
-.mobileDropdown.active .logSign { display: flex; }
-.mobileDropdown.active .logou   { display: flex; }

@@ -106,10 +106,20 @@
 }
 
 /* Bottom black bar */
-.blackbar {
-  background: black;
+.Developer {
+  background: rgb(0, 0, 0);
+  /* height: 64px; */
   text-align: center;
-  padding: 20px;
+  /* font-size: small; */
+  padding: 30px;
+  color: rgba(255, 255, 255, 0.534);
+}
+
+.blackbar {
+  background: rgb(0, 0, 0);
+  /* height: 64px; */
+  /* text-align: center; */
+  /* padding: 20px; */
   color: rgba(255, 255, 255, 0.836);
 }
 
@@ -165,6 +175,24 @@
 }
 
 @media (max-width: 480px) {
+
+  .Developer {
+  background: rgb(0, 0, 0);
+  /* height: 64px; */
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.534);
+}
+
+  .blackbar {
+  background: rgb(0, 0, 0);
+  height: 64px;
+  /* text-align: center; */
+  /* padding: 20px; */
+  color: rgba(255, 255, 255, 0.836);
+}
+
   .logoF {
     height: 35px;
     margin-left: 25px;

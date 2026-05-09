@@ -5,7 +5,7 @@ import logo from "../../assets/etLogo-w.png";
 
 const Footer = () => {
     return (
-        <>
+        <div className="foote">
             <footer className="footer">
                 {/* <div className="whitebar"></div> */}
 
@@ -70,10 +70,13 @@ const Footer = () => {
                 </div>
             </footer>
 
-            <div className="blackbar">
-                <span>Designed by Abdul Ali</span>
+            <div className="Developer">
+                <span>Developed by Abdul Ali</span>
             </div>
-        </>
+            <div className="blackbar">
+                {/* <span>Designed by Abdul Ali</span> */}
+            </div>
+        </div>
     );
 };
 
