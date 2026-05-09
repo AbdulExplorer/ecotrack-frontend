@@ -226,7 +226,7 @@ const email = user?.email;
   </div>
 
 </div>
-      <Footer />
+      {/* <Footer /> */}
 </div>
   );
 }
